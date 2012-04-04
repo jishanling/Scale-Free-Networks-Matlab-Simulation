@@ -1,0 +1,15 @@
+This was a research project I did in college and reposited in Google Code @ http://code.google.com/p/scale-free-network-sim.  Decided to move it to my github since GC S#$ks. Hopefully, I port this code in Ruby or Coffeescript as a web app, someday maybe.
+
+A scale-free network is a connected graph or network with the property that the number of links  originating from a given node exhibits a power law distribution . A scale-free network can be constructed by progressively adding nodes to an existing network and introducing links to existing nodes with preferential attachment so that the probability of linking to a given node  is proportional to the number of existing links  that node has, i.e.,
+
+![Alt equation](http://upload.wikimedia.org/wikipedia/en/math/e/c/6/ec6c3402a1c4e42461e151df6271fe91.png)
+
+where ![Alt c](http://upload.wikimedia.org/wikipedia/en/math/4/a/8/4a8a08f09d37b73795649038408b5f33.png) is a normalization constant and ![Alt y](http://upload.wikimedia.org/wikipedia/en/math/3/3/4/334de1ea38b615839e4ee6b65ee1b103.png) is a parameter whose value is typically in the range 2 < ![Alt y](http://upload.wikimedia.org/wikipedia/en/math/3/3/4/334de1ea38b615839e4ee6b65ee1b103.png) < 3, although occasionally it may lie outside these bounds.
+
+In this simulation, I simulated the evolution of the World Wide Web, running the simulation many times over to get an average of ![Alt y](http://upload.wikimedia.org/wikipedia/en/math/3/3/4/334de1ea38b615839e4ee6b65ee1b103.png) and find that 2 < ![Alt y](http://upload.wikimedia.org/wikipedia/en/math/3/3/4/334de1ea38b615839e4ee6b65ee1b103.png) < 3 for the World Wide Web. 
+ 
+Put simply, the nodes of a scale-free network aren't randomly or evenly connected. Scale-free networks include many "very connected" nodes, hubs of connectivity that shape the way the network operates. The ratio of very connected nodes to the number of nodes in the rest of the network remains constant as the network changes in size.
+
+That means it doesn't take many hops to get from one node to another — the science behind the notion that there are only six degrees of separation between any two people in the world. So, in scale-free networks, with or without very connected nodes, it may not take many hops for a node to make a connection with another node. There's a good chance, though, that in a scale-free network, many transactions would be funneled through one of the well-connected hub nodes - one like Google.
+
+Scale-free networks occur in many areas of science and engineering, including the topology of web pages (where the nodes are individual web pages and the links are hyper-links), the collaborative network of Hollywood actors (where the nodes actors and the links are co-stars in the same movie), the power grid of the western United States (where the nodes are generators, transformers, and substations and the links are power transmission lines), and the peer-reviewed scientific literature (where the nodes are publications and the links are citations).
